@@ -1,10 +1,6 @@
 <default>
 	  <prerequisites>
-		    <hardware type="dm8000" />
-		    <hardware type="dm800" />
-		    <hardware type="dm800se" />
-		    <hardware type="dm500hd" />
-		    <hardware type="dm7020hd" />
+		    <hardware type="sh4" />
                     <tag type="Skin" />
 	  </prerequisites>
           <info>

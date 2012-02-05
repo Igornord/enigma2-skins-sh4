@@ -1,5 +1,6 @@
 <default>
 	  <prerequisites>
+		    <hardware type="sh4" />
                     <tag type="Skin" />
 	  </prerequisites>
           <info>
