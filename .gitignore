@@ -9,3 +9,5 @@ index-enigma2-skins.xml
 install-sh
 missing
 .directory
+*.pyc
+*~
