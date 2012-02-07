@@ -268,6 +268,10 @@ if __name__ == "__main__":
 	enigma2_skindir = '/usr/local/share/enigma2'
 	do_split_packages(bb_data, enigma2_skindir, '(.*?)/.*', 'enigma2-skin-%s', 'Enigma2 Skin: %s', recursive=True, match_path=True, prepend=True)
 	
+	bb_set('PACKAGES', bb_get('PACKAGES') + ' enigma2-skin-meta')
+	bb_set('FILES_enigma2-skin-meta', '/usr/local/share/meta')
+	bb_set('DESCRIPTION_enigma2-skin-meta', 'skins metadata')
+	
 	os.chdir(pkgs_dir)
 	
 	global seen
@@ -275,7 +279,7 @@ if __name__ == "__main__":
 	
 	parent_pkg = read_control_file(pjoin(work_dir, 'CONTROL'))
 	
-	for p in bb_data['PACKAGES'].split(" "):
+	for p in bb_get('PACKAGES').split(" "):
 		print "Package: ", p
 		print "Description: ", bb_data['DESCRIPTION_'+p]
 		files = bb_data['FILES_'+p].split(" ")
