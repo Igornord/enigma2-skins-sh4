@@ -1,12 +1,16 @@
 #!/usr/bin/env python2
 
+import os
+
 #install DEST_DIR
 global pkgs_dir
-pkgs_dir = ''
+pkgs_dir = os.environ['IPKPREFIX']
+print "searching for files in", pkgs_dir
 
 #where this script will build packages
 global build_dir
-build_dir = ''
+build_dir = os.environ['IPKGBUILDDIR']
+print "temporary files goes in", build_dir
 
 bb_data = {}
 
@@ -19,8 +23,7 @@ def bb_get(var, *args):
 	except KeyError:
 		return ""
 		
-import os
-from shutil import copyfile
+
 import bb
 
 # bitbake/portage copyrighted (c)
@@ -256,9 +259,7 @@ def pjoin(*args):
 	return '/'.join(args)
 
 if __name__ == "__main__":
-	pkgs_dir = '/home/tech/tdt-amiko/tdt/tufsbox/ipk/'
-	build_dir = '/home/tech/build_dir/'
-	
+
 	work_dir = os.getcwd()
 	print "Building in", work_dir
 	
