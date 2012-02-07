@@ -1,0 +1,7 @@
+Package: enigma2-skins
+Version: 3.2git-r0
+Architecture: sh4
+Maintainer: "Felix Domke <tmbinc@elitedvb.net>"
+Priority: optional
+Section: extras
+Source: http://git.opendreambox.org
