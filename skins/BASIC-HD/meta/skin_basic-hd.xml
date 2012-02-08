@@ -1,6 +1,7 @@
 <default>
 	<prerequisites>
-                <hardware type="sh4" />
+                <hardware type="spark" />
+		<hardware type="spark7162" />
 		<tag type="Skin" />
 	</prerequisites>
 	<info>
