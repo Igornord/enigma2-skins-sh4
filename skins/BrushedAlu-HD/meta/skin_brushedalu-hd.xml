@@ -10,7 +10,7 @@
                     <packagename>enigma2-skin-brushedalu-hd</packagename>
                     <shortdescription>Kerni's BrushedAlu-HD skin</shortdescription>
                     <description>A nice looking HD skin in Brushed Alu Design from Kerni.</description>
-		    <screenshot src="http://www.dreamboxupdate.com/preview/skin_brushedalu-hd.jpg" />                    
+		    <screenshot src="http://vip.sat-universum.de/preview/skin_brushedalu-hd.jpg" />                    
           </info>
 
 	  <files type="package"> <!-- without version, without .ipk -->
