@@ -1,7 +1,5 @@
 <default>
 	  <prerequisites>
-                <hardware type="spark" />
-		<hardware type="spark7162" />
                     <tag type="Skin" />
 	  </prerequisites>
           <info>
@@ -10,7 +8,7 @@
                     <packagename>enigma2-skin-kerni-hd1</packagename>
                     <shortdescription>Kerni-HD1 skin</shortdescription>
                     <description>Kernis HD1 skin</description>
-		    <screenshot src="http://www.dreamboxupdate.com/preview/skin_kerni-hd1.jpg" />                    
+		    <screenshot src="http://spark.sat-universum.de/preview/kerni-hd1.jpg" />                    
           </info>
 
 	  <files type="package"> <!-- without version, without .ipk -->

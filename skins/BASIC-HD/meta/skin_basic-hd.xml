@@ -1,7 +1,5 @@
 <default>
 	<prerequisites>
-                <hardware type="spark" />
-		<hardware type="spark7162" />
 		<tag type="Skin" />
 	</prerequisites>
 	<info>
@@ -10,6 +8,7 @@
 		<packagename>enigma2-skin-basic-hd</packagename>
 		<shortdescription>BASIC-HD Skin by Ismail Demir</shortdescription>
 		<description>BASIC-HD Skin for Dreambox Images created from Ismail Demir</description>
+		<screenshot src="http://spark.sat-universum.de/preview/basic-hd.jpg" /> 
 	</info>
 
 	<files type="package"> <!-- without version, without .ipk -->

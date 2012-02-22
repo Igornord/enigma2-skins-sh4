@@ -1,7 +1,5 @@
 <default>
 	  <prerequisites>
-                <hardware type="spark" />
-		<hardware type="spark7162" />
                     <tag type="Skin" />
 	  </prerequisites>
           <info>
@@ -10,7 +8,7 @@
                     <packagename>enigma2-skin-dreammm-hd</packagename>
                     <shortdescription>Kerni's DreamMM-HD skin</shortdescription>
                     <description>a HD skin from Kerni</description>
-		    <screenshot src="http://vip.sat-universum.de/preview/skin_dreammm-hd.jpg" />                    
+		    <screenshot src="http://spark.sat-universum.de/preview/skin_dreammm-hd.jpg" />                    
           </info>
 
 	  <files type="package"> <!-- without version, without .ipk -->

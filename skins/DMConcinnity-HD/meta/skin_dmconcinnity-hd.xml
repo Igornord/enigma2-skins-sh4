@@ -1,7 +1,5 @@
 <default>
 	  <prerequisites>
-                <hardware type="spark" />
-		<hardware type="spark7162" />
                     <tag type="Skin" />
 	  </prerequisites>
           <info>
@@ -10,6 +8,7 @@
                     <packagename>enigma2-skin-dmconcinnity-hd</packagename>
                     <shortdescription>Kerni's DMConcinnity-HD skin</shortdescription>
                     <description>a HD skin from Kerni</description>
+		    <screenshot src="http://spark.sat-universum.de/preview/dmconcinnity-hd.jpg" /> 
           </info>
 
 	  <files type="package"> <!-- without version, without .ipk -->

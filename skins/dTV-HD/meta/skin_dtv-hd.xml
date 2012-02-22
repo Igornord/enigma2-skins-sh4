@@ -1,7 +1,5 @@
 <default>
 	  <prerequisites>
-                <hardware type="spark" />
-		<hardware type="spark7162" />
                     <tag type="Skin" />
 	  </prerequisites>
           <info>
@@ -10,7 +8,7 @@
                     <packagename>enigma2-skin-dtv-hd</packagename>
                     <shortdescription>Kerni's dTV-HD skin</shortdescription>
                     <description>A nice looking HD skin from Kerni</description>
-		    <screenshot src="http://vip.sat-universum.de/preview/skin_dtv-hd.jpg" />                    
+		    <screenshot src="http://spark.sat-universum.de/preview/skin_dtv-hd.jpg" />                    
           </info>
 
 	  <files type="package"> <!-- without version, without .ipk -->
