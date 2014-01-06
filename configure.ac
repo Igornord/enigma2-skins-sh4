@@ -18,7 +18,6 @@ skins/NeutronHD/src_skin/Makefile
 skins/NeutronHD/src_skin/buttons/Makefile
 skins/NeutronHD/src_skin/epg/Makefile
 skins/NeutronHD/src_skin/fonts/Makefile
-skins/NeutronHD/src_skin/epg/Makefile
 skins/NeutronHD/src_skin/icons/Makefile
 skins/NeutronHD/src_skin/menu/Makefile
 skins/NeutronHD/src_skin/pixmap/Makefile
