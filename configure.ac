@@ -63,6 +63,7 @@ AM_CONDITIONAL(UPDATE_PO, test "$with_po" = "yes")
 
 AC_CONFIG_FILES([
 Makefile
+skins/Makefile
 skins/NeutronHD/Makefile
 skins/NeutronHD/meta/Makefile
 skins/NeutronHD/po/Makefile
