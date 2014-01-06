@@ -22,6 +22,5 @@ skins/NeutronHD/src_skin/icons/Makefile
 skins/NeutronHD/src_skin/menu/Makefile
 skins/NeutronHD/src_skin/pixmap/Makefile
 skins/NeutronHD/src_skin/starsbar/Makefile
-skins/NeutronHD/src_skin/pixmap/Makefile
 skins/NeutronHD/src_skin/style/Makefile
 ])
