@@ -1,0 +1,4 @@
+#!/bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/SetupNeutronHD
+rm -rf /usr/share/enigma2/Neutron_hd
+exit 0

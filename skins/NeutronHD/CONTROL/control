@@ -1,0 +1,9 @@
+Package: enigma2-skin-NeutronHD
+Version: 0.1-r2
+Description: NeutronHD skin by Sirius
+Section: base
+Priority: optional
+Maintainer: Sirius0103
+Architecture: sh4
+Depends: enigma2-plugin-extensions-gisclub-lib
+Homepage: gisclub.tv

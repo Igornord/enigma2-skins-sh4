@@ -1,0 +1,15 @@
+<default>
+	<prerequisites>
+		<tag type="Skin" />
+	</prerequisites>
+	<info>
+		<author>Sirius0103</author>
+		<name>NeutronHD</name>
+		<packagename>enigma2-skin-neutronhd</packagename>
+		<shortdescription>Sirius0103's NeutronHD skin</shortdescription>
+		<description>A nice looking HD skin from Sirius0103.</description>
+	</info>
+	<files type="package">
+		<file type="package" name="enigma2-skin-neutronhd" />
+	</files>
+</default>

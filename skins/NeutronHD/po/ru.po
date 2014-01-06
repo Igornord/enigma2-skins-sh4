@@ -1,0 +1,262 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Setup skin Skin NeutronHD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-07-29 01:13+0100\n"
+"PO-Revision-Date: 2013-12-13 20:30+0400\n"
+"Last-Translator: \n"
+"Language-Team:  <sirius.al@rambler.ru>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: RUSSIAN FEDERATION\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+msgid "Additional text color:"
+msgstr "Цвет доп. текста:"
+
+msgid "Additional widget infobar:"
+msgstr "Доп. виджет в инфобаре:"
+
+msgid "Additional widget secondinfobar:"
+msgstr "Доп. виджет во втором инфобаре:"
+
+msgid "Additional widgets in channel selection:"
+msgstr "Доп. виджеты в селекторе каналов:"
+
+msgid "Channel number in infobars:"
+msgstr "Номер канала в инфобарах:"
+
+msgid "Clock in menu, infobars:"
+msgstr "Часы в меню и инфобарах:"
+
+msgid "Cursor backdrop color:"
+msgstr "Цвет фона курсора:"
+
+msgid "Cursor text color:"
+msgstr "Цвет текста курсора:"
+
+msgid "Do you want to restart the GUI now ?"
+msgstr "Вы хотите перезапустить GUI сейчас ?"
+
+msgid "ECM, EPG panel in secondinfobar:"
+msgstr "ECM, EPG панели во втором инфобаре:"
+
+msgid "Error by processing !!!"
+msgstr "Ошибка при обработке !!!"
+
+msgid "Fonts:"
+msgstr "Шрифт:"
+
+msgid "Menu text color:"
+msgstr "Цвет текста меню:"
+
+msgid "Panel EPG in channel selection:"
+msgstr "Панель EPG в селекторе каналов:"
+
+msgid "Panel description in movie selection:"
+msgstr "Панель описания в селекторе записей:"
+
+msgid "Position dish:"
+msgstr "Позиция антенны:"
+
+msgid "Progress bar color:"
+msgstr "Цвет бара прогресса:"
+
+msgid "Setup NeutronHD"
+msgstr "Установки НейтронHD"
+
+msgid "Setup skin NeutronHD"
+msgstr "Настройка скина НейтронHD"
+
+msgid ""
+"Skin NeutronHD\n"
+"Developer: Sirius0103 \n"
+"Homepage: www.gisclub.tv \n"
+"\n"
+"Donate:\n"
+"WMZ  Z395874509364\n"
+"WMR  R213063691482"
+msgstr ""
+"Скин НейтронHD\n"
+"Разработчик: Sirius0103 \n"
+"Домашний сайт: www.gisclub.tv \n"
+"\n"
+"Поблагодарить:\n"
+"WMZ  Z395874509364\n"
+"WMR  R213063691482"
+
+msgid "Style skins:"
+msgstr "Стиль скина:"
+
+msgid "Title text color:"
+msgstr "Цвет текста заголовков:"
+
+msgid "Version library:"
+msgstr "Версия библиотеки:"
+
+msgid "Version skin:"
+msgstr "Версия скина:"
+
+msgid "Widget mediainfobar:"
+msgstr "Виджет в медиаинфобаре:"
+
+msgid "Widgets infobar:"
+msgstr "Виджеты в инфобаре:"
+
+msgid "Widgets secondinfobar:"
+msgstr "Виджеты во втором инфобаре:"
+
+msgid "aqua"
+msgstr "аква"
+
+msgid "blue"
+msgstr "синий"
+
+msgid "brown"
+msgstr "коричневый"
+
+msgid "channel info"
+msgstr "данные канала"
+
+msgid "darkblue"
+msgstr "тёмносиний"
+
+msgid "darkgreen"
+msgstr "тёмнозелёный"
+
+msgid "darkgrey"
+msgstr "тёмносерый"
+
+msgid "default"
+msgstr "по умолчанию"
+
+msgid "ecm centre"
+msgstr "ecm в центре"
+
+msgid "ecm centre, epg centre"
+msgstr "ecm в центре, epg в центре"
+
+msgid "ecm left"
+msgstr "ecm слева"
+
+msgid "ecm left, epg right"
+msgstr "ecm слева, epg справа"
+
+msgid "ecm right"
+msgstr "ecm справа"
+
+msgid "ecm right, epg left"
+msgstr "ecm справа, epg слева"
+
+msgid "epg centre"
+msgstr "epg в центре"
+
+msgid "epg left"
+msgstr "epg слева"
+
+msgid "epg right"
+msgstr "epg справа"
+
+msgid "glaucous"
+msgstr "сиреневый"
+
+msgid "gold"
+msgstr "золотой"
+
+msgid "green"
+msgstr "зелёный"
+
+msgid "grey"
+msgstr "серый"
+
+msgid "lightgrey"
+msgstr "светлосерый"
+
+msgid "lime"
+msgstr "лайм"
+
+msgid "maroon"
+msgstr "малиновый"
+
+msgid "now"
+msgstr "сейчас"
+
+msgid "now, next"
+msgstr "сейчас, следущая"
+
+msgid "on centre"
+msgstr "в центре"
+
+msgid "on left"
+msgstr "слева"
+
+msgid "on right"
+msgstr "справа"
+
+msgid "orange"
+msgstr "оранжевый"
+
+msgid "picon channel, channel info"
+msgstr "пикон канала, данные канала"
+
+msgid "picon channel, picon provider, channel info"
+msgstr "пикон канала, пикон провайдера, данные канала"
+
+msgid "picon channel, picon provider, picon sattelite, channel info"
+msgstr "пикон канала, пикон провайдера, пикон спутника, данные канала"
+
+msgid "picon provider"
+msgstr "пикон провайдера"
+
+msgid "picon provider, picon sattelite"
+msgstr "пикон провайдера, пикон спутника"
+
+msgid "picon provider, picon sattelite, tuner"
+msgstr "пикон провайдера, пикон спутника, тюнер"
+
+msgid "picon provider, tuner"
+msgstr "пикон провайдера, тюнер"
+
+msgid "picon sattelite"
+msgstr "пикон спутника"
+
+msgid "picon sattelite, tuner"
+msgstr "пикон спутника, тюнер"
+
+msgid "picons"
+msgstr "пиконы"
+
+msgid "pink"
+msgstr "розовый"
+
+msgid "purple"
+msgstr "фиолетовый"
+
+msgid "red"
+msgstr "красный"
+
+msgid "saturday, 01 january 12:00"
+msgstr "суббота, 01 января 12:00"
+
+msgid "saturday, 01.01.2010 12:00"
+msgstr "суббота, 01.01.2010 12:00"
+
+msgid "skyblue"
+msgstr "голубой"
+
+msgid "standard"
+msgstr "стандартная"
+
+msgid "support TMDB plugin"
+msgstr "поддержка плагина TMDB"
+
+msgid "tuner"
+msgstr "тюнер"
+
+msgid "white"
+msgstr "белый"
+
+msgid "yellow"
+msgstr "жёлтый"
