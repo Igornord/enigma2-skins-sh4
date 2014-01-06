@@ -1,5 +1,3 @@
 installdir = $(libdir)/enigma2/python/Plugins/Extensions/SetupNeutronHD
 
-install_PYTHON = *.py
-
-install_DATA = *.png
+install_DATA = *.png *.py
