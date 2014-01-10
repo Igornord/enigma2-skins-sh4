@@ -1,0 +1,15 @@
+<default>
+	<prerequisites>
+		<tag type="Skin" />
+	</prerequisites>
+	<info>
+		<author>2boom</author>
+		<name>2B</name>
+		<packagename>enigma2-plugin-skins-2b</packagename>
+		<shortdescription>2boom's 2B skin</shortdescription>
+		<description>A nice looking HD skin from 2boom.</description>
+	</info>
+	<files type="package">
+		<file type="package" name="enigma2-plugin-skins-2b" />
+	</files>
+</default>

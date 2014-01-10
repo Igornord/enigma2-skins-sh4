@@ -1,6 +1,6 @@
 ACLOCAL_AMFLAGS = -I m4
 
-SUBDIRS = neutronhd
+SUBDIRS = 2b neutronhd
 
 metadir = $(datadir)/meta
 meta_DATA = index-enigma2-skins.xml

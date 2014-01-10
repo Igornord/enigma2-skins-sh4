@@ -63,6 +63,18 @@ AM_CONDITIONAL(UPDATE_PO, test "$with_po" = "yes")
 
 AC_CONFIG_FILES([
 Makefile
+2b/Makefile
+2b/meta/Makefile
+2b/src/Makefile
+2b/src/buttons/Makefile
+2b/src/epg/Makefile
+2b/src/fonts/Makefile
+2b/src/icons/Makefile
+2b/src/line/Makefile
+2b/src/sel/Makefile
+2b/src/skin_default/Makefile
+2b/src/skin_default/buttons/Makefile
+2b/src/skin_default/icons/Makefile
 neutronhd/Makefile
 neutronhd/meta/Makefile
 neutronhd/po/Makefile

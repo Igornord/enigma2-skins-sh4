@@ -1,0 +1,9 @@
+Package: enigma2-plugin-skins-2b
+Version: 0.3-r0
+Description: 2B skin
+Section: base
+Priority: optional
+Maintainer: 2boom
+Architecture: sh4
+Depends: enigma2-plugin-systemplugins-libgisclub
+Homepage: 4bob@ua.fm
