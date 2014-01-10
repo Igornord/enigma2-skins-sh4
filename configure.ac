@@ -63,20 +63,19 @@ AM_CONDITIONAL(UPDATE_PO, test "$with_po" = "yes")
 
 AC_CONFIG_FILES([
 Makefile
-skins/Makefile
-skins/neutronhd/Makefile
-skins/neutronhd/meta/Makefile
-skins/neutronhd/po/Makefile
-skins/neutronhd/src_plugin/Makefile
-skins/neutronhd/src_skin/Makefile
-skins/neutronhd/src_skin/buttons/Makefile
-skins/neutronhd/src_skin/epg/Makefile
-skins/neutronhd/src_skin/fonts/Makefile
-skins/neutronhd/src_skin/icons/Makefile
-skins/neutronhd/src_skin/menu/Makefile
-skins/neutronhd/src_skin/pixmap/Makefile
-skins/neutronhd/src_skin/starsbar/Makefile
-skins/neutronhd/src_skin/style/Makefile
+neutronhd/Makefile
+neutronhd/meta/Makefile
+neutronhd/po/Makefile
+neutronhd/src_plugin/Makefile
+neutronhd/src_skin/Makefile
+neutronhd/src_skin/buttons/Makefile
+neutronhd/src_skin/epg/Makefile
+neutronhd/src_skin/fonts/Makefile
+neutronhd/src_skin/icons/Makefile
+neutronhd/src_skin/menu/Makefile
+neutronhd/src_skin/pixmap/Makefile
+neutronhd/src_skin/starsbar/Makefile
+neutronhd/src_skin/style/Makefile
 
 ])
 AC_OUTPUT
