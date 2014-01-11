@@ -1,3 +1,3 @@
-installdir = $(datadir)/enigma2/NeutronHD/epg
+installdir = $(datadir)/enigma2/Neutron_hd/epg
 install_DATA = *.png
 

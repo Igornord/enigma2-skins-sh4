@@ -1,2 +1,2 @@
-installdir = $(datadir)/enigma2/NeutronHD/starsbar
+installdir = $(datadir)/enigma2/Neutron_hd/starsbar
 install_DATA = *.png

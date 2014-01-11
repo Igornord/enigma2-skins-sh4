@@ -1,0 +1,6 @@
+#!/bin/sh
+mv /usr/share/enigma2/Neutron_hd/pixmap/AC-3_AUDIO.png '/usr/share/enigma2/Neutron_hd/pixmap/AC-3 AUDIO.png'
+mv /usr/share/enigma2/Neutron_hd/pixmap/DTS-HD_AUDIO.png '/usr/share/enigma2/Neutron_hd/pixmap/DTS-HD AUDIO.png'
+mv /usr/share/enigma2/Neutron_hd/pixmap/DTS_AUDIO.png '/usr/share/enigma2/Neutron_hd/pixmap/DTS AUDIO.png'
+mv /usr/share/enigma2/Neutron_hd/pixmap/MPEG_AUDIO.png '/usr/share/enigma2/Neutron_hd/pixmap/MPEG AUDIO.png'
+exit 0
