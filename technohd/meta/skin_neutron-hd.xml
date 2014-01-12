@@ -1,0 +1,15 @@
+<default>
+	<prerequisites>
+		<tag type="Skin" />
+	</prerequisites>
+	<info>
+		<author>Sirius0103</author>
+		<name>TechnoHD</name>
+		<packagename>enigma2-plugin-skins-technohd</packagename>
+		<shortdescription>Sirius0103's TechnonHD skin</shortdescription>
+		<description>A nice looking HD skin from Sirius0103.</description>
+	</info>
+	<files type="package">
+		<file type="package" name="enigma2-plugin-skins-technohd" />
+	</files>
+</default>

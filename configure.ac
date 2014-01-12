@@ -75,6 +75,7 @@ Makefile
 2b/src/skin_default/Makefile
 2b/src/skin_default/buttons/Makefile
 2b/src/skin_default/icons/Makefile
+
 neutronhd/Makefile
 neutronhd/meta/Makefile
 neutronhd/po/Makefile
@@ -88,6 +89,18 @@ neutronhd/src_skin/menu/Makefile
 neutronhd/src_skin/pixmap/Makefile
 neutronhd/src_skin/starsbar/Makefile
 neutronhd/src_skin/style/Makefile
+
+technohd/Makefile
+technohd/meta/Makefile
+technohd/po/Makefile
+technohd/src_plugin/Makefile
+technohd/src_skin/Makefile
+technohd/src_skin/buttons/Makefile
+technohd/src_skin/epg/Makefile
+technohd/src_skin/fonts/Makefile
+technohd/src_skin/icons/Makefile
+technohd/src_skin/menu/Makefile
+technohd/src_skin/style/Makefile
 
 ])
 AC_OUTPUT
