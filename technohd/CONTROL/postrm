@@ -1,3 +1,4 @@
 #!/bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/SetupTechnoHD
 rm -rf /usr/share/enigma2/Techno_hd
 exit 0
