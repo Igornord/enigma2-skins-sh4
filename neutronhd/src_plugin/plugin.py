@@ -83,24 +83,26 @@ config.skin.neutron.ecmepgpanel = ConfigSelection(default="TemplatesInfoBarECM-E
 	("TemplatesInfoBarECM-EPG-8", _("ecm centre, epg centre")),
 	("TemplatesInfoBarECM-EPG-9", _("ecm right, epg left")),
 	("TemplatesInfoBarECM-EPG-10", _("ecm left, epg right"))])
-config.skin.neutron.epgchannelselection = ConfigSelection(default="ChannelSelectionInfoEPG-2", choices = [
-	("ChannelSelectionInfoEPG-1", _("no")),
-	("ChannelSelectionInfoEPG-2", _("now")),
-	("ChannelSelectionInfoEPG-3", _("now, next"))])
-config.skin.neutron.infochannelselection = ConfigSelection(default="ChannelSelectionInfoChannel-1", choices = [
-	("ChannelSelectionInfoChannel-1", _("no")),
-	("ChannelSelectionInfoChannel-2", _("picons")),
-	("ChannelSelectionInfoChannel-3", _("channel info")),
-	("ChannelSelectionInfoChannel-4", _("picon channel, channel info")),
-	("ChannelSelectionInfoChannel-5", _("picon channel, picon provider, channel info")),
-	("ChannelSelectionInfoChannel-6", _("picon channel, picon provider, picon sattelite, channel info"))])
-config.skin.neutron.coverpanel = ConfigSelection(default="TemplatesCover-1", choices = [
-	("TemplatesCover-1", _("no")),
-	("TemplatesCover-2", _("support TMDB plugin"))])
-config.skin.neutron.infomovieselection = ConfigSelection(default="MovieSelectionInfoMovie-2", choices = [
-	("MovieSelectionInfoMovie-1", _("no")),
-	("MovieSelectionInfoMovie-2", _("standard")),
-	("MovieSelectionInfoMovie-3", _("support TMDB plugin"))])
+config.skin.neutron.epgchannelselection = ConfigSelection(default="TemplatesChannelSelectionInfoEPG-2", choices = [
+	("TemplatesChannelSelectionInfoEPG-1", _("no")),
+	("TemplatesChannelSelectionInfoEPG-2", _("now")),
+	("TemplatesChannelSelectionInfoEPG-3", _("now, next")),
+	("TemplatesChannelSelectionInfoEPG-4", _("9 programs"))])
+config.skin.neutron.infochannelselection = ConfigSelection(default="TemplatesChannelSelectionInfoChannel-1", choices = [
+	("TemplatesChannelSelectionInfoChannel-1", _("no")),
+	("TemplatesChannelSelectionInfoChannel-2", _("picons")),
+	("TemplatesChannelSelectionInfoChannel-3", _("channel info")),
+	("TemplatesChannelSelectionInfoChannel-4", _("picon channel, channel info")),
+	("TemplatesChannelSelectionInfoChannel-5", _("picon channel, picon provider, channel info")),
+	("TemplatesChannelSelectionInfoChannel-6", _("picon channel, picon provider, picon sattelite, channel info"))])
+config.skin.neutron.coverinfopanel = ConfigSelection(default="TemplatesInfoBarInfoMovie-Cover-1", choices = [
+	("TemplatesInfoBarInfoMovie-Cover-1", _("no")),
+	("TemplatesInfoBarInfoMovie-Cover-2", _("poster (support TMDB plugin)")),
+	("TemplatesInfoBarInfoMovie-Cover-3", _("poster, description (support TMDB plugin)"))])
+config.skin.neutron.infomovieselection = ConfigSelection(default="TemplatesMovieSelectionInfoMovie-2", choices = [
+	("TemplatesMovieSelectionInfoMovie-1", _("no")),
+	("TemplatesMovieSelectionInfoMovie-2", _("standard")),
+	("TemplatesMovieSelectionInfoMovie-3", _("support TMDB plugin"))])
 config.skin.neutron.clockpanel = ConfigSelection(default="TemplatesClock-1", choices = [
 	("TemplatesClock-1", _("no")),
 	("TemplatesClock-2", _("12:00")),
@@ -109,6 +111,9 @@ config.skin.neutron.clockpanel = ConfigSelection(default="TemplatesClock-1", cho
 config.skin.neutron.dish = ConfigSelection(default="Dish-2", choices = [
 	("Dish-1", _("on left")),
 	("Dish-2", _("on right"))])
+config.skin.neutron.scrollbarmode = ConfigSelection(default="showNever", choices = [
+	("showNever", _("no")),
+	("showOnDemand", _("yes"))])
 config.skin.neutron.fonts = ConfigSelection(default="Roboto-Regular", choices = [
 	("Roboto-Regular", _("regular")),
 	("Roboto-Medium", _("medium")),
@@ -256,10 +261,11 @@ class SetupNeutronHD(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("ECM, EPG panel in secondinfobar:"), config.skin.neutron.ecmepgpanel))
 		list.append(getConfigListEntry(_("Panel EPG in channel selection:"), config.skin.neutron.epgchannelselection))
 		list.append(getConfigListEntry(_("Additional widgets in channel selection:"), config.skin.neutron.infochannelselection))
-		list.append(getConfigListEntry(_("Widget mediainfobar:"), config.skin.neutron.coverpanel))
+		list.append(getConfigListEntry(_("Widget mediainfobar:"), config.skin.neutron.coverinfopanel))
 		list.append(getConfigListEntry(_("Panel description in movie selection:"), config.skin.neutron.infomovieselection))
 		list.append(getConfigListEntry(_("Clock in menu, infobars:"), config.skin.neutron.clockpanel))
 		list.append(getConfigListEntry(_("Position dish:"), config.skin.neutron.dish))
+		list.append(getConfigListEntry(_("Scrollbar in menu:"), config.skin.neutron.scrollbarmode))
 		list.append(getConfigListEntry(_("Fonts:"), config.skin.neutron.fonts))
 		list.append(getConfigListEntry(_("Title text color:"), config.skin.neutron.titlecolor))
 		list.append(getConfigListEntry(_("Menu text color:"), config.skin.neutron.textcolor))
@@ -289,7 +295,7 @@ class SetupNeutronHD(ConfigListScreen, Screen):
 		elif fileExists("/var/opkg/status"):
 			status = "/var/opkg/status"
 		for line in open(status):
-			if line.find("NeutronHD") > -1:
+			if line.find("neutron-hd") > -1:
 				package = 1
 			if line.find("Version:") > -1 and package == 1:
 				package = 0
@@ -331,11 +337,12 @@ class SetupNeutronHD(ConfigListScreen, Screen):
 		ecmepgpanel = config.skin.neutron.ecmepgpanel.value
 		epgchannelselection = config.skin.neutron.epgchannelselection.value
 		infochannelselection = config.skin.neutron.infochannelselection.value
-		coverpanel = config.skin.neutron.coverpanel.value
+		coverinfopanel = config.skin.neutron.coverinfopanel.value
 		infomovieselection = config.skin.neutron.infomovieselection.value
 		clockpanel = config.skin.neutron.clockpanel.value
 		dish = config.skin.neutron.dish.value
 		fonts = config.skin.neutron.fonts.value
+		scrollbarmode = config.skin.neutron.scrollbarmode.value
 		titlecolor = config.skin.neutron.titlecolor.value
 		textcolor = config.skin.neutron.textcolor.value
 		avtextcolor = config.skin.neutron.avtextcolor.value
@@ -344,46 +351,51 @@ class SetupNeutronHD(ConfigListScreen, Screen):
 	# save config
 		for x in self["config"].list:
 			x[1].save()
+		try:
 	# default skin
-		os.system("cp %sdefskin.xml %sskin.xml" % (skinpath, skinpath))
+			os.system("cp %sdefskin.xml %sskin.xml" % (skinpath, skinpath))
 	# color`s text
-		os.system("sed -i 's/#10ffcc33/%s/w' %sskin.xml" % (titlecolor, skinpath))
-		os.system("sed -i 's/#10f4f4f4/%s/w' %sskin.xml" % (textcolor, skinpath))
-		os.system("sed -i 's/#108f8f8f/%s/w' %sskin.xml" % (avtextcolor, skinpath))
-		os.system("sed -i 's/#100099ff/%s/w' %sskin.xml" % (textcurcolor, skinpath))
+			os.system("sed -i 's/#10ffcc33/%s/w' %sskin.xml" % (titlecolor, skinpath))
+			os.system("sed -i 's/#10f4f4f4/%s/w' %sskin.xml" % (textcolor, skinpath))
+			os.system("sed -i 's/#108f8f8f/%s/w' %sskin.xml" % (avtextcolor, skinpath))
+			os.system("sed -i 's/#100099ff/%s/w' %sskin.xml" % (textcurcolor, skinpath))
 	# fonts	
-		os.system("sed -i 's/Roboto-Regular/%s/w' %sskin.xml" % (fonts, skinpath))
+			os.system("sed -i 's/Roboto-Regular/%s/w' %sskin.xml" % (fonts, skinpath))
 	# number channel
-		os.system("sed -i 's/%s/TemplatesInfoBarNumber/w' %sskin.xml" % (numberchannel, skinpath))
+			os.system("sed -i 's/%s/TemplatesInfoBarNumber/w' %sskin.xml" % (numberchannel, skinpath))
 	# widgets infobar
-		os.system("sed -i 's/TemplatesInfoBarTvBar/%s/w' %sskin.xml" % (styleinfobar, skinpath))
+			os.system("sed -i 's/TemplatesInfoBarTvBar/%s/w' %sskin.xml" % (styleinfobar, skinpath))
 	# additional infobar
-		os.system("sed -i 's/TemplatesInfoBarTvTechnical/%s/w' %sskin.xml" % (technicalinfobar, skinpath))
+			os.system("sed -i 's/TemplatesInfoBarTvTechnical/%s/w' %sskin.xml" % (technicalinfobar, skinpath))
 	# widgets secondinfobar
-		os.system("sed -i 's/TemplatesInfoBarTvSecondBar/%s/w' %sskin.xml" % (stylesecondinfobar, skinpath))
+			os.system("sed -i 's/TemplatesInfoBarTvSecondBar/%s/w' %sskin.xml" % (stylesecondinfobar, skinpath))
 	# additional secondinfobar
-		os.system("sed -i 's/TemplatesInfoBarTvSecondTechnical/%s/w' %sskin.xml" % (technicalsecondinfobar, skinpath))
+			os.system("sed -i 's/TemplatesInfoBarTvSecondTechnical/%s/w' %sskin.xml" % (technicalsecondinfobar, skinpath))
 	# ecm-epg panel
-		os.system("sed -i 's/%s/TemplatesInfoBarECM-EPG/w' %sskin.xml" % (ecmepgpanel, skinpath))
+			os.system("sed -i 's/%s/TemplatesInfoBarECM-EPG/w' %sskin.xml" % (ecmepgpanel, skinpath))
 	# epg channel selection
-		os.system("sed -i 's/%s/ChannelSelectionInfoEPG/w' %sskin.xml" % (epgchannelselection, skinpath))
+			os.system("sed -i 's/%s/TemplatesChannelSelectionInfoEPG/w' %sskin.xml" % (epgchannelselection, skinpath))
 	# info channel selection
-		os.system("sed -i 's/%s/ChannelSelectionInfoChannel/w' %sskin.xml" % (infochannelselection, skinpath))
-	# cover panel
-		os.system("sed -i 's/%s/TemplatesCover/w' %sskin.xml" % (coverpanel, skinpath))
+			os.system("sed -i 's/%s/TemplatesChannelSelectionInfoChannel/w' %sskin.xml" % (infochannelselection, skinpath))
+	# cover info panel
+			os.system("sed -i 's/%s/TemplatesInfoBarInfoMovie-Cover/w' %sskin.xml" % (coverinfopanel, skinpath))
 	# info movie selection
-		os.system("sed -i 's/%s/MovieSelectionInfoMovie/w' %sskin.xml" % (infomovieselection, skinpath))
+			os.system("sed -i 's/%s/TemplatesMovieSelectionInfoMovie/w' %sskin.xml" % (infomovieselection, skinpath))
 	# clock panel
-		os.system("sed -i 's/%s/TemplatesClock/w' %sskin.xml" % (clockpanel, skinpath))
+			os.system("sed -i 's/%s/TemplatesClock/w' %sskin.xml" % (clockpanel, skinpath))
 	# dish
-		os.system("sed -i 's/%s/Dish/w' %sskin.xml" % (dish, skinpath))
+			os.system("sed -i 's/%s/Dish/w' %sskin.xml" % (dish, skinpath))
+	# scrollbar
+			os.system("sed -i 's/showNever/%s/w' %sskin.xml" % (scrollbarmode, skinpath))
 	# style progress
-		os.system("sed -i 's/yellowprogress/%sprogress/w' %sskin.xml" % (progresscolor, skinpath))
+			os.system("sed -i 's/goldprogress/%sprogress/w' %sskin.xml" % (progresscolor, skinpath))
 	# style skin`s
-		os.system("sed -i 's/greymenu/%smenu/w' %sskin.xml" % (style, skinpath))
-		os.system("sed -i 's/greysel/%ssel/w' %sskin.xml" % (style, skinpath))
-		os.system("sed -i 's/greybg/%sbg/w' %sskin.xml" % (style, skinpath))
+			os.system("sed -i 's/greymenu/%smenu/w' %sskin.xml" % (style, skinpath))
+			os.system("sed -i 's/greysel/%ssel/w' %sskin.xml" % (style, skinpath))
+			os.system("sed -i 's/greybg/%sbg/w' %sskin.xml" % (style, skinpath))
 	# end
+		except:
+			self.session.open(MessageBox, _("Error by processing !!!"), MessageBox.TYPE_ERROR)
 		self.session.openWithCallback(self.restart, MessageBox,_("Do you want to restart the GUI now ?"), MessageBox.TYPE_YESNO)
 
 	def exit(self):
