@@ -1,0 +1,15 @@
+<default>
+	<prerequisites>
+		<tag type="Skin" />
+	</prerequisites>
+	<info>
+		<author>orlov</author>
+		<name>SD</name>
+		<packagename>enigma2-plugin-skins-sd</packagename>
+		<shortdescription>SD skin</shortdescription>
+		<description>SD skin from orlov.</description>
+	</info>
+	<files type="package">
+		<file type="package" name="enigma2-plugin-skins-sd" />
+	</files>
+</default>

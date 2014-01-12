@@ -3,6 +3,7 @@ ACLOCAL_AMFLAGS = -I m4
 SUBDIRS = \
 	2b \
 	neutronhd \
+	sd \
 	technohd
 
 metadir = $(datadir)/meta

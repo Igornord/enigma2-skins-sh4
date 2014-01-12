@@ -1,0 +1,7 @@
+Package: enigma2-plugin-skins-sd
+Version: 1.0-r2
+Description: Skin SD
+Section: base
+Priority: optional
+Maintainer: orlov
+Architecture: sh4

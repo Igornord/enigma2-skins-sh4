@@ -90,6 +90,21 @@ neutronhd/src_skin/pixmap/Makefile
 neutronhd/src_skin/starsbar/Makefile
 neutronhd/src_skin/style/Makefile
 
+sd/Makefile
+sd/meta/Makefile
+sd/src/Makefile
+sd/src/bs1/Makefile
+sd/src/buttons/Makefile
+sd/src/icons/Makefile
+sd/src/menu/Makefile
+sd/src/skin_default/Makefile
+sd/src/skin_default/buttons/Makefile
+sd/src/skin_default/icons/Makefile
+sd/src/skin_default/menu/Makefile
+sd/src/skin_default/spinner/Makefile
+sd/src_conv/Makefile
+sd/src_rend/Makefile
+
 technohd/Makefile
 technohd/meta/Makefile
 technohd/po/Makefile
